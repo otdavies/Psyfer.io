@@ -1,0 +1,33 @@
+.header {
+  background: var(--light-header);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 15px 10px; }
+  .dark-theme .header {
+    background: var(--dark-header); }
+  .header__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    @media (--phone) {
+      .header__right {
+        flex-direction: row-reverse; } }
+  .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 100%; }
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  cursor: pointer; }
+
+.theme-toggler {
+  fill: currentColor; }

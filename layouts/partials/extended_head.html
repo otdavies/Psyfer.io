@@ -1,0 +1,6 @@
+
+{{ range .Site.Params.custom_css -}}
+    {{ $sass := resources.Get . }}
+    {{ $style := $sass | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+{{- end }}
